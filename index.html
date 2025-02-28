@@ -171,9 +171,8 @@
                 }
                 .square {
                     width: 150px;
-                    height: 100px;
-                    display: flex;
-                    justify-content: center;
+                    height: 150px;
+                    
                     align-items: center;
                     color: #0e0606;
                     font-size: 1em;
@@ -237,6 +236,9 @@
                 .project-section {
                     text-align: center;
                     margin: 40px 0;
+                    display: flex; /* Enables flexbox */
+                    justify-content: center;
+                    gap:20px;
                 }
                 .project-section p{
                     color: #5c056b;
@@ -244,12 +246,7 @@
                     font-size: 2em;
                     font-weight: bold;
                 } 
-                .project-box{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap:50px;
-                }            
+                         
                 /* Contact Section */
                 .contact-info-square {
                     padding: 20px;
@@ -406,13 +403,13 @@
             <div class="education-section">
         <p>Education Details</p>
         <div class="rectangle-container">
-            
             <div class="rectangle">
-                <h3>SSC</h3>
-            <p><strong>Institution:</strong> Bhashyam High School</p>
-            <p><strong>Year:</strong>2019-2020 </p>
-            <p><strong>location:</strong>Penugonda</p>
-            <p><strong>Grade:</strong> 9.9</p>
+                <h3>Bachelor of Technology(BTECH)</h3>
+            <p><strong>Institution:</strong>Sasi Institute of Technology & Engineering</p>
+            <p><strong>Course:</strong>CSD </p>
+            <p><strong>Year:</strong>2022-2026</p>
+            <p><strong>location:</strong>Tadepalligudem</p>
+            <p><strong>Grade:</strong> 8.9</p>
             </div>
             <div class="rectangle">
                 <h3>INTERMEDIATE</h3>
@@ -422,13 +419,13 @@
             <p><strong>Grade:</strong> 9.4</p>
             </div>
             <div class="rectangle">
-                <h3>Bachelor of Technology(BTECH)</h3>
-            <p><strong>Institution:</strong>Sasi Institute of Technology & Engineering</p>
-            <p><strong>Course:</strong>CSD </p>
-            <p><strong>Year:</strong>2022-2026</p>
-            <p><strong>location:</strong>Tadepalligudem</p>
-            <p><strong>Grade:</strong> 8.9</p>
+                <h3>SSC</h3>
+            <p><strong>Institution:</strong> Bhashyam High School</p>
+            <p><strong>Year:</strong>2019-2020 </p>
+            <p><strong>location:</strong>Penugonda</p>
+            <p><strong>Grade:</strong> 9.9</p>
             </div>
+            
         </div>
     </div>
     </div>
@@ -436,22 +433,28 @@
         <h3>My Skills</h3>
         <div class="squares-container">
             <div class="square">
-                <strong><p>C</p></strong>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.gW26_dzjhjxuynpHFipnuAHaIp&pid=Api&P=0&h=180" width="100px" height="100px">
+                <p><strong>C</strong></p>
             </div>
             <div class="square">
-                <strong><p>PYTHON</p></strong>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.d9zqBJuglfpGLzG4_HOf-gHaEK&pid=Api&P=0&h=180"  width="100px" height="100px">
+                <P><STrong>PYTHON</STrong></P>
             </div>
             <div class="square">
+                <img src="https://1.bp.blogspot.com/-xWi_JBrsKYQ/VXGJW361ZaI/AAAAAAAAAPk/0sJBht-HkwU/s1600/java-logo.jpg"  width="100px" height="100px">
                 <strong><p>JAVA</p></strong>
             </div>
             <div class="square">
+                <img src="https://logodix.com/logo/542135.jpg"  width="100px" height="100px">
                 <strong><p>SQL</p></strong>
             </div>
             <div class="square">
+                <img src="http://oxnia.com/wp-content/uploads/2019/01/frontend-logo-featured-image-2.png"  width="100px" height="80px">
                 <strong><p> Front End Web Development
                 </p></strong>
             </div>
             <div class="square">
+                <img src="https://logodix.com/logo/2090013.jpg"  width="100px" height="100px">
                 <strong><p>MONGO DB</p></strong>
             </div>
         </div>
@@ -494,9 +497,10 @@
         </div>
    
         <div id="project" class="content-section" >
+            <h3>Projects</h3>
             <div class="project-section">
-        <p>Projects</p>
-        <div class="project-box">
+        
+        
         <div class="rectangle-container">
             
             <div class="rectangle1">
@@ -507,12 +511,12 @@
             <div class="rectangle-container">
             
                 <div class="rectangle1">
-                    <a href="https://ik.imagekit.io/fu4uxhoyq/notesapp.html?updatedAt=1740738035271"><img src="https://tse2.mm.bing.net/th?id=OIP.DaTGqdKCW1Yg-dL1tU5QAAHaC_&pid=Api&P=0&h=180" height="200px" width="300px"  alt="notesapp"></a>
+                    <a href="https://shannu1584.github.io/Portfolio/"><img src="https://tse2.mm.bing.net/th?id=OIP.DaTGqdKCW1Yg-dL1tU5QAAHaC_&pid=Api&P=0&h=180" height="200px" width="300px"  alt="notesapp"></a>
                     <h3>MY PORTFOLIO</h3>
                 </div>
                 </div>
             </div>
-    </div></div>
+    </div>
     <div id="contact" class="content-section" ></div>
         <div class="centered-text-below-circles">
             <h3>Contact Me</h3>
@@ -541,7 +545,6 @@
     <footer>
         <marquee>© Thank you for visting....</marquee>
     </footer>
-    
     <script>
          function scrollToElement(elementId) {
             var element = document.getElementById(elementId);
@@ -555,7 +558,5 @@
         navLinks.classList.toggle('active');
     }
     </script>
-
-
 </body>
 </html>
